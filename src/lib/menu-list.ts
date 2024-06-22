@@ -9,7 +9,8 @@ import {
   Pill,
   Pizza,
   Carrot,
-  ShoppingCart
+  ShoppingCart,
+  Cake
 } from "lucide-react";
 
 import CartIcon from '../components/demo/nice'
@@ -58,33 +59,14 @@ export function getMenuList(pathname: string): Group[] {
       groupLabel: "Products",
       menus: [
         {
-          href: "/medicines",
-          label: "Medicines",
-          active: pathname.includes("/medicines"),
-          icon: Pill,
-          submenus: []
-        },
-        {
-          href: "/groccery",
-          label: "Grocceries",
-          active: pathname.includes("/groccery"),
-          icon: Carrot,
-          submenus: []
-        },
-        {
-          href: "/food",
-          label: "Food",
-          active: pathname.includes("/food"),
-          icon: Pizza,
-          submenus: []
-        },
-        {
-          href: "/fashion",
-          label: "Fashion",
-          active: pathname.includes("/fashion"),
-          icon: Shirt,
+          href: "/cakes",
+          label: "Cakes",
+          active: pathname.includes("/cakes"),
+          icon: Cake,
           submenus: []
         }
+      
+        
       ]
     },
     {
