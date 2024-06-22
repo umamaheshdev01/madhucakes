@@ -61,11 +61,10 @@ const addFromCart = async ({ mail, proid, stock, price }) => {
       };
 
       const emailResponse = await emailjs.send(
-        'service_k6y4edr',
-        'template_pw3ow35',
+       "service_7i7k46s","template_uvkyxmq",
         emailParams,
         {
-          publicKey: 'nBWxNb5IUeZA-hc3I',
+          publicKey: 'IEk2rKb8gHnHQ8nir',
         }
       );
 
