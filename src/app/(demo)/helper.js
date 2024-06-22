@@ -17,7 +17,7 @@ const addFromCart = async ({ mail, proid, stock, price }) => {
         email: mail,
         pro_id: proid,
         quantity: stock,
-        price: price
+        price: price*stock
       });
 
       if (error) {
@@ -50,13 +50,13 @@ const addFromCart = async ({ mail, proid, stock, price }) => {
 
       // Send email using emailjs
       const emailParams = {
-        from_name: 'Hop Shop',
+        from_name: 'Cake N Bake',
         to_name: order.Users.username,
         date: getDateTwoDaysAhead(order.created_at),
         url: order.Product.image,
         pro: order.Product.name,
         quantity: order.quantity,
-        price: order.price,
+        price: order.price*order.quantity,
         to_email: order.email
       };
 
