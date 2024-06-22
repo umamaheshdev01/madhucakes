@@ -40,7 +40,7 @@ export function Sidebar() {
                   : "translate-x-0 opacity-100"
               )}
             >
-              Hop Shop
+              Cake N Bake
             </h1>
           </Link>
         </Button>

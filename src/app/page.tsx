@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import { PanelsTopLeft } from "lucide-react";
+import { PanelsTopLeft,Cake } from "lucide-react";
 import { ArrowRightIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 
 import { Button } from "@/components/ui/button";
@@ -18,9 +18,9 @@ export default function HomePage() {
             href="/"
             className="flex justify-start items-center hover:opacity-85 transition-opacity duration-300"
           >
-            <PanelsTopLeft className="w-6 h-6 mr-3" />
-            <span className="font-bold">Hop Shop</span>
-            <span className="sr-only">Hop Shop</span>
+            <Cake className="w-6 h-6 mr-3" />
+            <span className="font-bold">Cake N Bake</span>
+            <span className="sr-only">Cake N Bake</span>
           </Link>
           <nav className="ml-auto flex items-center gap-2">
             <Button
@@ -55,14 +55,14 @@ export default function HomePage() {
             </span>
             <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-6">
               <Button variant="default" asChild>
-                <Link href="/medicines">
+                <Link href="/cakes">
                   Get Started
                   <ArrowRightIcon className="ml-2" />
                 </Link>
               </Button>
               <Button variant="outline" asChild>
                 <Link
-                  href="/medicines"
+                  href="/cakes"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
