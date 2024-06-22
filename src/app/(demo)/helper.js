@@ -56,7 +56,7 @@ const addFromCart = async ({ mail, proid, stock, price }) => {
         url: order.Product.image,
         pro: order.Product.name,
         quantity: order.quantity,
-        price: order.price*order.quantity,
+        price: order.price,
         to_email: order.email
       };
 
