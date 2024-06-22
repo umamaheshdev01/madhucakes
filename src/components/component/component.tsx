@@ -31,8 +31,8 @@ export function Component({ name, price, des, img, id }) {
           src={img}
           alt="Product Image"
           width={400}
-          height={300}
-          className="w-full h-full object-contain transform transition-transform duration-300 hover:scale-110"
+          height={250}
+          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
         /></Link>
         
       </div>

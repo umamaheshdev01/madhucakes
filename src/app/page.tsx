@@ -115,7 +115,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="font-medium underline underline-offset-4"
             >
-               HopShop.
+               Cake N Bake.
             </Link>
             
             <Link
