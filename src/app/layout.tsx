@@ -15,9 +15,9 @@ export const metadata: Metadata = {
       ? `https://${process.env.VERCEL_URL}`
       : `http://localhost:${process.env.PORT || 3000}`
   ),
-  title: "Hop Shop",
+  title: "CakeNBake",
   description:
-    "A stunning ecommerce store",
+    "Cakes for life",
   alternates: {
     canonical: "/"
   },
