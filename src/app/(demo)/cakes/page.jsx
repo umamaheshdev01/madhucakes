@@ -26,7 +26,7 @@ export default function Meds() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
-              <Link href="/medicines">Products</Link>
+              <Link href="/cakes">Products</Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
