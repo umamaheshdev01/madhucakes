@@ -9,24 +9,17 @@ import { NextResponse } from "next/server"
 
 export const POST = async(req,res)=>{
 
-    function extractUsername(email) {
-
-        let parts = email.split('@');
-        let username = parts[0];
-
-        let capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
     
-        return capitalizedUsername;
-    }
     
     
     const data1 = await req.json()
 
 
     const myemail = data1.data.email_addresses[0].email_address
-    const namam = extractUsername(myemail)
+    const namam = data1.data.username
+    const proficpic = data1.data.profile_img_url
 
-    const {data,error} = await supabase.from('Users').insert({email : myemail,username : namam})
+    const {data,error} = await supabase.from('Users').insert({email : myemail,username : namam,pic : proficpic})
 
     if(error)
     {
