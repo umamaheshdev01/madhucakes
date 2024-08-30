@@ -26,3 +26,7 @@ export const POST = async (req) => {
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
 }
+
+export const GET = async (req) => {
+    return NextResponse.json({msg:1},{status:200})
+}
